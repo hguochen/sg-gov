@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SG Gov</title>
+  <meta name="description" content="Unofficial demo: one front door to Singapore government services, with answers linked to official sources.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="disclaimer-strip">Unofficial demo project. Not affiliated with the Government of Singapore.</div>
+
+  <div class="shell">
+    <div class="frame">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="SG Gov home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+          SG Gov
+        </a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer">Menu</button>
+      </header>
+
+      <main id="main">
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-title">
+          <h1 id="hero-title">Hello, Singapore</h1>
+          <p class="lede">Whatever you need from government, start here.</p>
+
+          <div class="hero-card">
+            <div class="scenes" aria-hidden="true"></div>
+            <form class="search" role="search" autocomplete="off">
+              <label class="sr-only" for="q">Describe what you need</label>
+              <input id="q" name="q" type="text" placeholder="Try ‘How do I renew my passport?’">
+              <button type="submit" aria-label="Get answer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </form>
+            <p class="example-caption" aria-live="off"></p>
+          </div>
+
+          <div class="answer-wrap" aria-live="polite"></div>
+        </section>
+
+        <!-- Statement -->
+        <p class="statement">
+          SG Gov brings together simple answers from <em>official Singapore government sources</em>.
+          It’s free, has no ads, and nothing you type is stored.
+        </p>
+
+        <!-- Agencies sphere -->
+        <section class="agencies" aria-labelledby="agencies-title">
+          <div>
+            <h2 id="agencies-title">Dozens of agencies, one front door.</h2>
+            <p>No more wandering from site to site. SG Gov points you to the right agency the first time.</p>
+            <a class="text-link" href="how-it-works.html">See how it works →</a>
+          </div>
+          <div class="sphere-stage" role="img" aria-label="A rotating sphere of Singapore government agency names">
+            <div class="sphere"></div>
+          </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features" aria-label="Why SG Gov">
+          <article class="feature">
+            <div class="icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            </div>
+            <h3>Your questions stay private.</h3>
+            <p>Matching happens in your browser. Nothing you type is sent anywhere or stored.</p>
+            <a class="text-link" href="privacy.html">Learn about privacy →</a>
+          </article>
+          <article class="feature">
+            <div class="icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg>
+            </div>
+            <h3>Clear answers. Official sources.</h3>
+            <p>Every answer links straight to the agency that runs the service.</p>
+            <a class="text-link" href="sources.html">Learn about sources →</a>
+          </article>
+          <article class="feature">
+            <div class="icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+            </div>
+            <h3>No app to download.</h3>
+            <p>Just open SG Gov in your browser on your phone, tablet or computer.</p>
+            <a class="text-link" href="#q" data-focus-search>Ask a question →</a>
+          </article>
+        </section>
+
+        <!-- Coming soon -->
+        <section aria-labelledby="coming-title">
+          <div class="coming-head">
+            <div>
+              <h2 id="coming-title">More coming</h2>
+              <p>Beyond answers: concept ideas for finishing tasks, tracking progress and keeping everything in one place.</p>
+            </div>
+            <div class="carousel-btns">
+              <button type="button" data-dir="-1" aria-label="Previous previews">←</button>
+              <button type="button" data-dir="1" aria-label="Next previews">→</button>
+            </div>
+          </div>
+
+          <div class="carousel" tabindex="0" aria-label="Concept previews">
+            <article class="preview">
+              <span class="tag">Concept preview</span>
+              <h3>Find jobs matched to your skills</h3>
+              <div class="mock">
+                <div class="mock-row"><div>Software Engineer<small>GovTech · Hybrid</small></div><span class="mock-btn">View</span></div>
+                <div class="mock-row"><div>Data Analyst<small>Statutory board · On-site</small></div><span class="mock-btn">View</span></div>
+                <div class="mock-row"><div>UX Researcher<small>Ministry · Hybrid</small></div><span class="mock-btn">View</span></div>
+              </div>
+            </article>
+            <article class="preview">
+              <span class="tag">Concept preview</span>
+              <h3>Choose a campsite</h3>
+              <div class="mock">
+                <div class="mock-row"><div>East Coast Park<small>Area D campsite</small></div><span class="mock-btn">Select</span></div>
+                <div class="mock-row"><div>Pasir Ris Park<small>Area 1 campsite</small></div><span class="mock-btn">Select</span></div>
+                <div class="mock-row"><div>West Coast Park<small>Area 3 campsite</small></div><span class="mock-btn">Select</span></div>
+              </div>
+            </article>
+            <article class="preview">
+              <span class="tag">Concept preview</span>
+              <h3>Pick a nearby polyclinic</h3>
+              <div class="mock">
+                <div class="mock-row"><div>Northside Polyclinic<small>1.2 km away</small></div><span class="mock-btn">Add</span></div>
+                <div class="mock-row"><div>Central Polyclinic<small>2.8 km away</small></div><span class="mock-btn">Add</span></div>
+                <div class="mock-row"><div>Riverside Polyclinic<small>3.5 km away</small></div><span class="mock-btn">Add</span></div>
+              </div>
+            </article>
+            <article class="preview">
+              <span class="tag">Concept preview</span>
+              <h3>Browse flats</h3>
+              <div class="mock">
+                <div class="mock-row"><div>4-room flat<small>Sample estate · 93 sqm</small></div><span class="mock-btn">Details</span></div>
+                <div class="mock-row"><div>3-room flat<small>Sample estate · 68 sqm</small></div><span class="mock-btn">Details</span></div>
+              </div>
+            </article>
+            <article class="preview">
+              <span class="tag">Concept preview</span>
+              <h3>Track your passport</h3>
+              <div class="mock">
+                <strong>Passport application</strong>
+                <div class="progress" aria-label="Step 2 of 3"><span class="done"></span><span class="done"></span><span></span></div>
+                <small>Submitted · Processing · Ready to collect</small>
+              </div>
+            </article>
+            <article class="preview">
+              <span class="tag">Concept preview</span>
+              <h3>Update your address everywhere</h3>
+              <div class="mock">
+                <div class="mock-row"><div>ICA (NRIC)</div><span>✓</span></div>
+                <div class="mock-row"><div>CPF Board</div><span>✓</span></div>
+                <div class="mock-row"><div>HDB</div><span>✓</span></div>
+                <div class="mock-row"><div>LTA</div><span>○</span></div>
+              </div>
+            </article>
+            <article class="preview">
+              <span class="tag">Concept preview</span>
+              <h3>Log in once</h3>
+              <div class="mock" style="text-align:center;padding:28px 12px">
+                <span class="mock-btn" style="font-size:14px;padding:8px 22px">Log in</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <span>© <span data-year></span> SG Gov (demo)</span>
+      <nav aria-label="Footer">
+        <a href="how-it-works.html">How it works</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="sources.html">Sources</a>
+        <a href="https://www.gov.sg/" rel="noopener">Official gov.sg ↗</a>
+      </nav>
+      <p class="disclaimer">SG Gov is an unofficial demo project. It is not affiliated with or endorsed by the Government of Singapore or any of its agencies. Answers are general summaries, so always check the linked official source.</p>
+    </footer>
+  </div>
+
+  <div class="drawer-backdrop" data-close-menu></div>
+  <nav class="drawer" id="drawer" aria-label="Site menu" inert>
+    <div class="drawer-head">
+      <strong>Menu</strong>
+      <button class="close-btn" type="button" data-close-menu>Close</button>
+    </div>
+    <a href="./">Home</a>
+    <a href="how-it-works.html">How it works</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+
+  <script src="js/answers.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
