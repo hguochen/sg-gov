@@ -1,4 +1,4 @@
-/* Theme: Tropical — coral, orange, teal, sunshine.
+/* Light-only theme: Tropical — coral, orange, teal, sunshine.
    Bright --c-* colours are for fills; --accent / --accent-2 are deeper, text-safe shades. */
 :root {
   --c-coral: #ff5a5f;
@@ -33,49 +33,6 @@
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --gutter: 16px;
   --maxw: 1120px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --t-coral: #3a1d22;
-    --t-orange: #3a2a14;
-    --t-teal: #10332f;
-    --grad-text: linear-gradient(90deg, #ff6b70, #ffb347 50%, #2dd4c4);
-    --blob1: rgba(255, 90, 95, 0.22);
-    --blob2: rgba(0, 184, 169, 0.20);
-    --blob3: rgba(255, 159, 28, 0.18);
-    --bg: #120d10;
-    --surface: #1b1518;
-    --surface-2: #231b1f;
-    --text: #f6eeea;
-    --muted: #b6aaa6;
-    --border: #36292d;
-    --accent: #ff6b70;
-    --accent-2: #2dd4c4;
-    --navy: #ff6b70;
-    --navy-ink: #1b1518;
-    --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-  }
-}
-:root[data-theme="dark"] {
-  --t-coral: #3a1d22;
-  --t-orange: #3a2a14;
-  --t-teal: #10332f;
-  --grad-text: linear-gradient(90deg, #ff6b70, #ffb347 50%, #2dd4c4);
-  --blob1: rgba(255, 90, 95, 0.22);
-  --blob2: rgba(0, 184, 169, 0.20);
-  --blob3: rgba(255, 159, 28, 0.18);
-  --bg: #120d10;
-  --surface: #1b1518;
-  --surface-2: #231b1f;
-  --text: #f6eeea;
-  --muted: #b6aaa6;
-  --border: #36292d;
-  --accent: #ff6b70;
-  --accent-2: #2dd4c4;
-  --navy: #ff6b70;
-  --navy-ink: #1b1518;
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -451,7 +408,3 @@ body {
 .progress span.done { background: var(--grad); }
 .chip:hover { border-color: var(--accent); color: var(--accent); }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .next-card:nth-child(2) .next-num { color: #ffb347; }
-}
-:root[data-theme="dark"] .next-card:nth-child(2) .next-num { color: #ffb347; }

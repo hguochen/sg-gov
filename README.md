@@ -65,7 +65,7 @@ What works today:
 - **Agency sphere**: a visual of the many agencies SG Gov brings together.
 - **Concept previews** of future features (see the roadmap below).
 - **Subpages**: How it works, Privacy and Sources. The Sources table is generated from the same answer data, so it never drifts out of sync.
-- Responsive layout, light and dark mode, and reduced-motion support.
+- Bright, light-only "Tropical" colour theme (coral, orange, teal, sunshine), responsive layout, and reduced-motion support.
 
 The answer summaries are deliberately short and general. Rules, fees and eligibility change, so the linked official source is always the authority.
 
@@ -136,7 +136,7 @@ sg_gov/
 ├─ how-it-works.html   How SG Gov finds answers
 ├─ privacy.html        What is (and isn't) collected
 ├─ sources.html        Official sources behind each topic (generated from answers.js)
-├─ css/styles.css      Design tokens, layout, components, dark mode
+├─ css/styles.css      Colour tokens (Tropical theme), layout, components
 ├─ js/answers.js       Curated topics and the keyword matcher
 ├─ js/main.js          Page interactions
 ├─ img/favicon.svg
