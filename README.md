@@ -2,6 +2,8 @@
 
 **One stop for everything you need from the Singapore government: just ask.**
 
+**Live demo:** https://hguochen.github.io/sg-gov/
+
 SG Gov is a single, AI-powered front door to Singapore government services. You describe what you need in plain language, such as "How do I renew my passport?", "I'm moving to Singapore for a job. What pass do I need?" or "How do I check my CPF?". SG Gov works out which agency handles it, explains the steps simply, and takes you straight to the official service.
 
 > **Unofficial demo project. It is not affiliated with, or endorsed by, the Government of Singapore.** For anything authoritative, use the official agency sites linked in each answer.
